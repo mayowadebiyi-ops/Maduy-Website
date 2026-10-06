@@ -80,11 +80,11 @@ export function Insights() {
 							<div>
 								<Check className="h-8 w-8 text-brand-orange" />
 								<h4 className="display-tight mt-6 text-[1.35rem] font-bold text-paper">
-									You're on the list.
+									One last step.
 								</h4>
 								<p className="mt-4 text-[0.94rem] leading-relaxed text-brand-grey">
-									We'll send the guide to{" "}
-									<span className="text-paper">{email.trim().toLowerCase()}</span>{" "}
+									Your email app has opened with the request — press send and we'll send the
+									guide to <span className="text-paper">{email.trim().toLowerCase()}</span>{" "}
 									the day it publishes. Nothing else — we don't run a mailing list.
 								</p>
 							</div>

@@ -121,12 +121,16 @@ export function Contact() {
 							<div className="flex h-full flex-col justify-center py-8">
 								<Check className="h-9 w-9 text-brand-orange" />
 								<h3 className="display-tight mt-7 text-[1.6rem] font-bold text-paper">
-									Received.
+									Almost there.
 								</h3>
 								<p className="mt-4 max-w-[40ch] text-[0.97rem] leading-relaxed text-brand-grey">
-									Thank you, {form.name.trim().split(" ")[0]}. This goes straight to
-									Olayinka, not to an inbox nobody reads. You'll hear back within
-									two business days.
+									Thank you, {form.name.trim().split(" ")[0]}. Your email app has opened with
+									your message to Olayinka. Press send there and you'll hear back within
+									two business days. If nothing opened, email{" "}
+									<a href="mailto:yinka.adebiyi@maduyconsult.com" className="text-paper underline">
+										yinka.adebiyi@maduyconsult.com
+									</a>
+									.
 								</p>
 							</div>
 						) : (
