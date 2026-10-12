@@ -49,7 +49,7 @@ Secondary public CTA:
 
 ## Alliance language
 
-The Alliance is a collaboration of independent professional firms. Legal services are provided solely by Ehinlai Law Professional Corporation under a separate retainer. The specific legal entities engaged for consulting work are identified in the relevant engagement documentation.
+The Alliance is a collaboration of independent professional firms. Legal services are provided solely by Ehinlaiye Law Professional Corporation under a separate retainer. The specific legal entities engaged for consulting work are identified in the relevant engagement documentation.
 
 ## Current data note
 
