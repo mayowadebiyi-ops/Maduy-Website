@@ -3,45 +3,45 @@ import { Link } from "wouter";
 const FIRMS = [
 	{
 		firm: "Maduy Consult Limited",
-		role: "Lead firm",
+		role: "Market strategy & programme lead",
 		principal: "Olayinka Adebiyi",
-		title: "Managing Director / Lead Consultant",
-		bio: "A career in Nigerian banking through the sector's consolidation, including service as Acting Managing Director of Global Bank. Now advises from Toronto and Lagos on financial advisory, corporate finance and performance improvement.",
-		scope: "Origination, engagement leadership, finance, governance and West African execution.",
+		title: "Managing Director",
+		bio: "Chartered Accountant and senior business executive with more than three decades of experience across banking, investment, governance, strategy and operations.",
+		scope: "Market strategy, commercial execution, stakeholder coordination, partner assessment and programme leadership.",
 	},
 	{
-		firm: "AFS Consulting Network",
-		role: "Strategy and implementation",
-		principal: "Adekunle Salau",
-		title: "Principal",
-		bio: "Former consulting partner at PwC and former Partner-in-Charge and Advisory Leader for West Africa at EY. Two decades building and running large advisory practices across the region.",
-		scope: "Strategy, transformation and implementation, subcontracted under the lead engagement.",
+		firm: "AFS",
+		role: "Strategy, transformation & delivery support",
+		principal: "Adekunle “Kunle” Salau",
+		title: "Founding Partner / senior adviser",
+		bio: "Senior strategy and transformation professional with extensive consulting experience across African markets and leadership roles in major international professional-services firms.",
+		scope: "Strategy, transformation, operating-model design and implementation support, through the relevant AFS entity identified for each engagement.",
 	},
 	{
 		firm: "Ehinlaiye Law Professional Corporation",
-		role: "Ontario legal counsel",
+		role: "Canadian legal & governance counsel",
 		principal: "Olutoyin Ehinlaiye",
-		title: "Partner",
-		bio: "Called to the Nigerian Bar in 1987 and to the Ontario Bar in 2012. Executive Director at Intercontinental Bank and Managing Director of Gateway Bank in Lagos, and a participant in the four-bank merger that formed Intercontinental. Corporate and commercial law, mergers and acquisitions and real estate practice in Ontario.",
-		scope: "Legal, documentation and governance — retained directly by the client under its own engagement letter.",
+		title: "Barrister & Solicitor",
+		bio: "Ontario barrister and solicitor with corporate, governance, banking and legal experience in Canada and Nigeria.",
+		scope: "Canadian legal, contractual, corporate and governance services, provided under a separate legal retainer.",
 	},
 ];
 
 const MECHANICS = [
 	{
 		n: "01",
-		title: "One contract, in Canada",
-		body: "You sign a single master services agreement with Maduy Consult Limited, in Canadian dollars, governed by Ontario law. No naira invoice ever reaches your accounts payable.",
+		title: "One coordinated programme",
+		body: "Commercial work is organised around a defined objective, workplan and set of outcomes rather than a collection of disconnected introductions.",
 	},
 	{
 		n: "02",
-		title: "One accountable lead",
-		body: "Maduy Consult leads every engagement and subcontracts the strategy and implementation scope to AFS Consulting Network. You have one point of accountability, not a committee.",
+		title: "Clear professional responsibilities",
+		body: "Commercial, operational and legal responsibilities are allocated to the appropriate firm and documented in the relevant engagement terms.",
 	},
 	{
 		n: "03",
-		title: "Legal, separately and properly",
-		body: "Ehinlaiye Law Professional Corporation is retained directly by you under its own engagement letter. Legal fees never flow through the advisory contract.",
+		title: "Legal services stay separate",
+		body: "Ehinlaiye Law Professional Corporation is retained separately for legal services. Legal advice is not bundled into the consulting scope.",
 	},
 ];
 
@@ -51,19 +51,18 @@ export function Alliance() {
 			<div className="hex-field absolute inset-0 opacity-40" aria-hidden="true" />
 
 			<div className="relative mx-auto max-w-[1240px] px-6 lg:px-10">
-				<div className="max-w-[54ch]">
+				<div className="max-w-[58ch]">
 					<p className="eyebrow text-brand-orange">The Alliance</p>
 					<h2 className="display-tight mt-5 text-[2rem] font-bold text-paper lg:text-[2.9rem]">
-						Three independent firms. One line of accountability.
+						Three independent firms. Complementary responsibilities.
 					</h2>
 					<p className="mt-6 text-[1.02rem] leading-relaxed text-brand-grey">
-						Most Canadian companies approaching West Africa are offered one of two
-						things: an offshore consultant with no recourse, or a global firm that sells
-						the engagement and staffs it with juniors. This is neither.
+						The Canada–West Africa Expansion Alliance brings together senior
+						business, strategy and legal professionals for companies that need more
+						than a market report — while keeping each firm's responsibilities clear.
 					</p>
 				</div>
 
-				{/* Firms */}
 				<div className="mt-16 grid gap-px bg-ink-3 lg:grid-cols-3">
 					{FIRMS.map((f) => (
 						<article key={f.firm} className="flex flex-col bg-ink-2 p-8 lg:p-9">
@@ -86,21 +85,17 @@ export function Alliance() {
 					))}
 				</div>
 
-				{/* How it works */}
 				<div className="mt-24 grid gap-14 lg:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)] lg:gap-20">
 					<div>
 						<p className="eyebrow text-brand-grey">How it works</p>
 						<h3 className="display-tight mt-5 text-[1.7rem] font-bold text-paper lg:text-[2.1rem]">
-							You contract in Canada. We carry the complexity.
+							A coordinated programme, with the lines kept clear.
 						</h3>
 					</div>
 
 					<div className="space-y-px bg-ink-3">
 						{MECHANICS.map((m) => (
-							<div
-								key={m.n}
-								className="flex gap-6 bg-ink py-7 lg:gap-8"
-							>
+							<div key={m.n} className="flex gap-6 bg-ink py-7 lg:gap-8">
 								<span className="font-display text-[0.8rem] font-bold tracking-[0.14em] text-brand-orange">
 									{m.n}
 								</span>
@@ -117,17 +112,17 @@ export function Alliance() {
 					</div>
 				</div>
 
-				{/* Capacity */}
 				<div className="mt-20 border-l-2 border-brand-orange bg-ink-2 p-8 lg:p-12">
-					<p className="display-tight max-w-[46ch] text-[1.35rem] font-semibold leading-snug text-paper lg:text-[1.7rem]">
-						Principals lead every engagement — they do not sell it and hand it to
-						juniors. We take two or three engagements at a time so that stays true.
+					<p className="display-tight max-w-[50ch] text-[1.35rem] font-semibold leading-snug text-paper lg:text-[1.7rem]">
+						Our current commercial beachhead is Canadian mining supply and services
+						into Nigeria and Ghana. Mining is the starting point — not the limit of
+						Maduy Consult's capabilities.
 					</p>
 					<Link
 						href="/alliance"
 						className="mt-8 inline-block border-b border-brand-orange pb-1 text-[0.92rem] font-semibold text-paper transition-colors hover:text-brand-orange"
 					>
-						How the alliance is structured, in full →
+						Meet the Alliance →
 					</Link>
 				</div>
 			</div>

@@ -3,35 +3,35 @@ import { PageShell } from "../components/page-shell";
 const FIRMS = [
 	{
 		firm: "Maduy Consult Limited",
-		role: "Lead firm — prime contractor",
+		role: "Market strategy & programme lead",
 		principal: "Olayinka Adebiyi",
-		title: "Managing Director / Lead Consultant",
+		title: "Managing Director",
 		scope: [
-			"Holds the client contract and carries the programme",
-			"Origination, engagement leadership and coordination",
-			"Finance, governance and West African execution",
+			"Market assessment and commercial strategy",
+			"Stakeholder coordination and partner evaluation",
+			"Programme leadership and execution support",
 		],
 	},
 	{
-		firm: "AFS Consulting Network",
-		role: "Strategy and implementation",
-		principal: "Adekunle Salau",
-		title: "Principal",
+		firm: "AFS",
+		role: "Strategy, transformation & delivery support",
+		principal: "Adekunle “Kunle” Salau",
+		title: "Founding Partner / senior adviser",
 		scope: [
-			"Strategy, transformation and implementation scope",
-			"Subcontracted under the lead engagement",
-			"Two decades building and running large advisory practices in the region",
+			"Strategy and transformation support",
+			"Operating-model design and implementation",
+			"Relevant legal entity identified in each engagement document",
 		],
 	},
 	{
 		firm: "Ehinlaiye Law Professional Corporation",
-		role: "Ontario legal counsel",
+		role: "Canadian legal & governance counsel",
 		principal: "Olutoyin Ehinlaiye",
-		title: "Partner",
+		title: "Barrister & Solicitor",
 		scope: [
-			"Legal, documentation and governance",
-			"Retained directly by the client, under its own engagement letter",
-			"Corporate, commercial, M&A and real estate practice — called in Nigeria in 1987 and Ontario in 2012",
+			"Canadian legal, contractual and governance services",
+			"Retained directly under a separate legal retainer",
+			"Coordinates local counsel where market-specific advice is required",
 		],
 	},
 ];
@@ -39,31 +39,32 @@ const FIRMS = [
 const WHY = [
 	{
 		n: "01",
-		title: "One point of accountability",
-		body: "You are not managing a committee of vendors across two continents. One firm holds the programme, sets the plan and answers for the result — and subcontracts the specialist scope behind that single line.",
+		title: "One coordinated programme",
+		body: "The work is organised around a defined commercial objective, workplan and set of outcomes rather than a loose collection of advisers and introductions.",
 	},
 	{
 		n: "02",
-		title: "Canadian recourse, Canadian paperwork",
-		body: "The contract is Canadian, the currency is Canadian, the governing law is Ontario. That is not a formality. It is the difference between a commercial disagreement you can actually resolve and one you cannot.",
+		title: "Clear professional responsibilities",
+		body: "Commercial, operational and legal responsibilities are kept distinct and documented in the relevant engagement terms.",
 	},
 	{
 		n: "03",
-		title: "Principals do the work",
-		body: "Every engagement is led by one of the three principals. We take two or three engagements at a time so that remains literally true rather than a claim on a website.",
+		title: "Senior involvement",
+		body: "The principals stay close to the decisions that matter — market entry, partner choice, governance, risk and implementation.",
 	},
 	{
 		n: "04",
-		title: "Local counsel, coordinated not resold",
-		body: "West African local counsel is engaged per market as the work requires, and coordinated alongside the programme. It is never sub-contracted through the advisory scope.",
+		title: "Local knowledge with international discipline",
+		body: "The model combines practical West African market understanding with the governance and documentation standards expected by international businesses.",
 	},
 ];
 
 const NOT = [
-	"We are not a partnership, a joint venture or a merged firm. The three firms are separate legal entities and each is responsible for its own work.",
-	"The alliance does not provide legal services. Legal services are provided solely by Ehinlaiye Law Professional Corporation, under a separate retainer signed directly with you.",
-	"Legal fees never flow through the advisory contract, and are never marked up by it.",
-	"We do not take on more work than the principals can lead personally. When we are full, we will tell you when we are next free.",
+	"We are independent firms collaborating around defined client assignments; we are not a merged firm or joint venture.",
+	"We are not importers or exporters. We help clients build and execute their own market presence.",
+	"We are not contact brokers. An introduction is useful only when it contributes to a credible commercial process.",
+	"Legal services are provided solely by Ehinlaiye Law Professional Corporation under a separate retainer.",
+	"We do not present unverified market relationships as established partnerships.",
 ];
 
 function Node({
@@ -117,38 +118,35 @@ export default function AlliancePage() {
 			eyebrow="The Alliance"
 			title={
 				<>
-					One coordinated programme.{" "}
-					<span className="text-brand-orange">
-						Three separately accountable firms.
-					</span>
+					Senior West African execution.{" "}
+					<span className="text-brand-orange">Clear professional boundaries.</span>
 				</>
 			}
-			standfirst="Most Canadian companies approaching West Africa are offered one of two things: an offshore consultant with no recourse, or a global firm that sells the engagement and staffs it with juniors. This page sets out exactly how our alternative is put together, who is responsible for what, and what you sign."
+			standfirst="The Canada–West Africa Expansion Alliance brings together experienced business, strategy and legal professionals to support Canadian companies entering and growing in West African markets. The firms remain independent, and each engagement identifies the legal entities and responsibilities involved."
 		>
-			{/* Structure */}
 			<section className="bg-paper py-24 lg:py-28">
 				<div className="mx-auto max-w-[1240px] px-6 lg:px-10">
-					<p className="eyebrow text-brand-orange">How you contract</p>
-					<h2 className="display-tight mt-5 max-w-[24ch] text-[2rem] font-bold text-ink lg:text-[2.5rem]">
-						You sign in Canada. We carry the complexity.
+					<p className="eyebrow text-brand-orange">How the programme is organised</p>
+					<h2 className="display-tight mt-5 max-w-[28ch] text-[2rem] font-bold text-ink lg:text-[2.5rem]">
+						One commercial objective. Clear professional responsibilities.
 					</h2>
 
 					<div className="mt-14 grid gap-px bg-[#e3e1de] lg:grid-cols-3">
 						{[
 							{
 								n: "01",
-								h: "One master services agreement",
-								b: "A single agreement with Maduy Consult Limited, in Canadian dollars, governed by Ontario law. No naira invoice ever reaches your accounts payable.",
+								h: "Programme leadership",
+								b: "Maduy Consult leads market assessment, commercial strategy, stakeholder coordination, partner evaluation and overall programme execution.",
 							},
 							{
 								n: "02",
-								h: "One accountable lead",
-								b: "Maduy Consult leads the engagement and subcontracts the strategy and implementation scope to AFS Consulting Network. You deal with the lead, not the chain behind it.",
+								h: "Strategy and delivery support",
+								b: "AFS contributes strategy, transformation and implementation capability where an assignment requires deeper operating-model or delivery support.",
 							},
 							{
 								n: "03",
-								h: "Legal, separately and properly",
-								b: "You retain Ehinlaiye Law Professional Corporation directly under its own engagement letter. Its fees and its duty of care sit with you, not with us.",
+								h: "Legal, separately retained",
+								b: "Ehinlaiye Law Professional Corporation provides Canadian legal and governance services under its own legal retainer.",
 							},
 						].map((m) => (
 							<div key={m.n} className="bg-paper p-8">
@@ -158,58 +156,55 @@ export default function AlliancePage() {
 								<h3 className="mt-4 font-display text-[1.1rem] font-bold leading-snug text-ink">
 									{m.h}
 								</h3>
-								<p className="mt-3 text-[0.94rem] leading-relaxed text-slate">
-									{m.b}
-								</p>
+								<p className="mt-3 text-[0.94rem] leading-relaxed text-slate">{m.b}</p>
 							</div>
 						))}
 					</div>
 				</div>
 			</section>
 
-			{/* Diagram */}
 			<section className="bg-ink py-24 lg:py-28">
 				<div className="mx-auto max-w-[1240px] px-6 lg:px-10">
-					<p className="eyebrow text-brand-grey">Contracting map</p>
-					<h2 className="display-tight mt-5 max-w-[26ch] text-[1.8rem] font-bold text-paper lg:text-[2.2rem]">
-						Two engagement lines, kept deliberately separate.
+					<p className="eyebrow text-brand-grey">Delivery map</p>
+					<h2 className="display-tight mt-5 max-w-[28ch] text-[1.8rem] font-bold text-paper lg:text-[2.2rem]">
+						Commercial delivery and legal advice are coordinated, not blurred.
 					</h2>
 
 					<div className="mt-12 grid gap-10 lg:grid-cols-2 lg:gap-16">
 						<div>
 							<Node
-								label="Advisory line"
-								title="You — the Canadian company"
-								body="A mid-market company with a West African opportunity it does not yet have the people to pursue."
+								label="Commercial programme"
+								title="You — the client"
+								body="A company assessing or executing a West African market opportunity."
 							/>
-							<Connector text="Master services agreement" />
+							<Connector text="Defined consulting engagement" />
 							<Node
-								title="Maduy Consult Limited — lead"
-								body="Prime contractor. Coordination, origination, finance and governance, and execution on the ground."
+								title="Maduy Consult — programme lead"
+								body="Market strategy, commercial execution, partner assessment, stakeholder coordination and programme leadership."
 								accent
 							/>
-							<Connector text="Subcontract" />
+							<Connector text="Specialist scope as agreed" />
 							<Node
-								title="AFS Consulting Network"
-								body="Strategy, transformation and implementation, delivered under the lead engagement."
+								title="AFS"
+								body="Strategy, transformation, operating-model and implementation support through the relevant AFS entity."
 							/>
 						</div>
 
 						<div>
 							<Node
 								label="Legal line"
-								title="You — the Canadian company"
-								body="The same company, contracting separately and directly for legal advice."
+								title="You — the client"
+								body="The same client, contracting separately for legal advice where required."
 							/>
 							<Connector text="Separate legal retainer" />
 							<Node
 								title="Ehinlaiye Law Professional Corporation"
-								body="Ontario legal, documentation and governance. Engaged directly by you. Not a marketing party to the alliance."
+								body="Canadian legal, contractual and governance advice relevant to the engagement."
 							/>
-							<Connector text="Engaged per market as required" />
+							<Connector text="Per-market advice where required" />
 							<Node
-								title="West African local counsel"
-								body="Appointed in-market where the work requires it, coordinated with the programme rather than resold through it."
+								title="Local counsel"
+								body="Qualified in-market counsel may be engaged where local legal advice is required."
 								dashed
 							/>
 						</div>
@@ -217,12 +212,11 @@ export default function AlliancePage() {
 				</div>
 			</section>
 
-			{/* Firms */}
 			<section className="bg-bone py-24 lg:py-28">
 				<div className="mx-auto max-w-[1240px] px-6 lg:px-10">
 					<p className="eyebrow text-brand-orange">Who does what</p>
 					<h2 className="display-tight mt-5 max-w-[24ch] text-[2rem] font-bold text-ink lg:text-[2.5rem]">
-						Three firms, three defined scopes.
+						Three firms, three defined roles.
 					</h2>
 
 					<div className="mt-14 grid gap-px bg-[#e3e1de] lg:grid-cols-3">
@@ -239,14 +233,8 @@ export default function AlliancePage() {
 								<p className="mt-1 text-[0.85rem] text-slate/80">{f.title}</p>
 								<ul className="mt-6 space-y-3">
 									{f.scope.map((s) => (
-										<li
-											key={s}
-											className="flex gap-3 text-[0.92rem] leading-relaxed text-slate"
-										>
-											<span
-												className="mt-2 h-px w-3 shrink-0 bg-brand-orange"
-												aria-hidden="true"
-											/>
+										<li key={s} className="flex gap-3 text-[0.92rem] leading-relaxed text-slate">
+											<span className="mt-2 h-px w-3 shrink-0 bg-brand-orange" aria-hidden="true" />
 											{s}
 										</li>
 									))}
@@ -257,19 +245,18 @@ export default function AlliancePage() {
 				</div>
 			</section>
 
-			{/* Why this shape */}
 			<section className="bg-ink py-24 lg:py-28">
 				<div className="mx-auto max-w-[1240px] px-6 lg:px-10">
 					<div className="grid gap-14 lg:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)] lg:gap-20">
 						<div>
 							<p className="eyebrow text-brand-grey">Why this shape</p>
 							<h2 className="display-tight mt-5 text-[1.8rem] font-bold text-paper lg:text-[2.2rem]">
-								The structure is the product.
+								Designed around execution, not labels.
 							</h2>
-							<p className="mt-6 max-w-[42ch] text-[0.98rem] leading-relaxed text-brand-grey">
-								Everything a Canadian board worries about in West Africa — recourse,
-								accountability, who actually shows up — is answered by how this is
-								assembled, not by how it is described.
+							<p className="mt-6 max-w-[44ch] text-[0.98rem] leading-relaxed text-brand-grey">
+								Market entry can involve commercial judgement, operating design and
+								regulated professional advice. The structure is intended to keep those
+								responsibilities clear while the client works toward one objective.
 							</p>
 						</div>
 
@@ -294,33 +281,24 @@ export default function AlliancePage() {
 				</div>
 			</section>
 
-			{/* Where we start */}
 			<section className="bg-paper py-24 lg:py-28">
 				<div className="mx-auto max-w-[1240px] px-6 lg:px-10">
 					<div className="grid gap-14 lg:grid-cols-2 lg:gap-20">
 						<div>
-							<p className="eyebrow text-brand-orange">Where we concentrate</p>
-							<h2 className="display-tight mt-5 max-w-[22ch] text-[2rem] font-bold text-ink lg:text-[2.4rem]">
-								Mining supply and services, into Nigeria and Ghana.
+							<p className="eyebrow text-brand-orange">Where we start</p>
+							<h2 className="display-tight mt-5 max-w-[24ch] text-[2rem] font-bold text-ink lg:text-[2.4rem]">
+								Canadian mining supply and services into Nigeria and Ghana.
 							</h2>
-							<p className="mt-6 max-w-[52ch] text-[1rem] leading-relaxed text-slate">
-								We deliberately lead with one sector rather than claiming all of
-								them. Canadian mining companies already hold C$15.6 billion of
-								assets across Western Africa, and every one of those operations buys
-								equipment, engineering and services. The demand is documented, the
-								buyers are named and reachable, and the entry questions are the ones
-								we are built to answer.
-							</p>
-							<p className="mt-5 max-w-[52ch] text-[1rem] leading-relaxed text-slate">
-								Energy, cleantech, agri-food and ICT are on the map and not on the
-								sales plan. If your opportunity sits outside the beachhead, say so
-								and we will tell you honestly whether we are the right firm for it.
+							<p className="mt-6 max-w-[54ch] text-[1rem] leading-relaxed text-slate">
+								Nigeria is the principal focus of the current programme, with Ghana
+								providing an established complementary mining market. The work is
+								multi-mineral and supplier-led rather than limited to gold.
 							</p>
 							<a
 								href="/west-africa"
 								className="mt-8 inline-block border-b border-brand-orange pb-1 text-[0.92rem] font-semibold text-ink transition-colors hover:text-brand-orange"
 							>
-								See the evidence behind that →
+								See the market case →
 							</a>
 						</div>
 
@@ -328,10 +306,7 @@ export default function AlliancePage() {
 							<p className="eyebrow text-brand-grey">What we do not do</p>
 							<ul className="mt-7 space-y-6">
 								{NOT.map((n) => (
-									<li
-										key={n}
-										className="text-[0.95rem] leading-relaxed text-slate"
-									>
+									<li key={n} className="text-[0.95rem] leading-relaxed text-slate">
 										{n}
 									</li>
 								))}

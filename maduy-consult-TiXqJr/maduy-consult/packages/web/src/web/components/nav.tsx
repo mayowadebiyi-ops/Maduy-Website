@@ -65,7 +65,7 @@ export function Nav() {
 						href="/#contact"
 						className="border border-brand-orange px-5 py-2.5 text-[0.85rem] font-semibold tracking-[0.04em] text-brand-orange transition-colors hover:bg-brand-orange hover:text-paper"
 					>
-						Start a conversation
+						Discuss your opportunity
 					</a>
 				</nav>
 
@@ -107,7 +107,7 @@ export function Nav() {
 						onClick={() => setOpen(false)}
 						className="mt-5 block border border-brand-orange px-5 py-3 text-center text-[0.9rem] font-semibold text-brand-orange"
 					>
-						Start a conversation
+						Discuss your opportunity
 					</a>
 				</div>
 			)}
