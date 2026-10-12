@@ -1,18 +1,18 @@
 const STATS = [
 	{
+		figure: "C$18.7B",
+		label: "Canada–Africa two-way merchandise trade in 2025",
+		source: "Global Affairs Canada, 2025",
+	},
+	{
 		figure: "C$15.6B",
-		label: "Canadian mining assets in West Africa, held by 46 companies",
-		source: "Natural Resources Canada, 2024",
+		label: "Canadian mining assets held in Western Africa in 2024",
+		source: "Natural Resources Canada, 2024 preliminary",
 	},
 	{
-		figure: "~1%",
-		label: "Share of Canada's merchandise trade that goes to Africa",
-		source: "That gap is the opportunity",
-	},
-	{
-		figure: "12",
-		label: "ECOWAS member states, a single market of over 400 million people",
-		source: "As of 2025",
+		figure: "46",
+		label: "Canadian companies holding mining assets in Western Africa in 2024",
+		source: "Natural Resources Canada, 2024 preliminary",
 	},
 ];
 
@@ -34,20 +34,17 @@ export function Hero() {
 			<div className="relative mx-auto max-w-[1240px] px-6 pb-24 pt-40 lg:px-10 lg:pb-32 lg:pt-52">
 				<p className="eyebrow text-brand-grey">Toronto &nbsp;•&nbsp; Lagos</p>
 
-				<h1 className="display-tight mt-7 max-w-[19ch] text-[2.6rem] font-extrabold text-paper sm:text-[3.4rem] lg:text-[4.4rem]">
-					The senior West African team you can put to work
-					<span className="text-brand-orange">
-						{" "}
-						before you can afford to build one.
-					</span>
+				<h1 className="display-tight mt-7 max-w-[18ch] text-[2.6rem] font-extrabold text-paper sm:text-[3.4rem] lg:text-[4.4rem]">
+					Helping Canadian companies enter and grow
+					<span className="text-brand-orange"> in West Africa.</span>
 				</h1>
 
-				<div className="mt-9 flex max-w-[62ch] gap-5">
+				<div className="mt-9 flex max-w-[66ch] gap-5">
 					<span className="mt-1 w-[3px] shrink-0 bg-brand-orange" aria-hidden="true" />
 					<p className="text-[1.05rem] leading-relaxed text-brand-grey lg:text-[1.15rem]">
-						Maduy Consult helps Canadian companies enter and grow in Nigeria and West
-						Africa. You contract in Canada, in Canadian dollars, under Ontario law. We
-						carry the complexity on the ground.
+						Senior market-entry, governance and execution support for companies
+						expanding into Nigeria and Ghana — from opportunity assessment and
+						partner strategy through practical implementation.
 					</p>
 				</div>
 
@@ -56,13 +53,13 @@ export function Hero() {
 						href="#contact"
 						className="bg-brand-orange px-8 py-4 text-center text-[0.92rem] font-semibold tracking-[0.03em] text-paper transition-opacity hover:opacity-90"
 					>
-						Start a conversation
+						Discuss your West Africa opportunity
 					</a>
 					<a
-						href="#alliance"
+						href="/alliance"
 						className="border border-ink-3 px-8 py-4 text-center text-[0.92rem] font-semibold tracking-[0.03em] text-paper transition-colors hover:border-brand-grey"
 					>
-						How the alliance works
+						Explore the Alliance
 					</a>
 				</div>
 
