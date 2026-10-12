@@ -3,11 +3,13 @@ import { Check, Loader2, Mail, MapPin, Phone } from "lucide-react";
 import { useSubmitContact } from "../queries/contact";
 
 const INTERESTS = [
+	"Mining supplier market entry — Nigeria / Ghana",
+	"Market Opportunity Diagnostic",
 	"Market entry — Nigeria",
 	"Market entry — wider West Africa",
-	"Partner or counterparty due diligence",
-	"Financial advisory / corporate finance",
-	"Performance improvement",
+	"Partner or distributor assessment",
+	"Governance / operating-model support",
+	"Alliance / referral collaboration",
 	"Something else",
 ];
 
@@ -60,15 +62,15 @@ export function Contact() {
 
 			<div className="relative mx-auto max-w-[1240px] px-6 lg:px-10">
 				<div className="grid gap-16 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:gap-24">
-					{/* Left — details */}
 					<div>
 						<p className="eyebrow text-brand-orange">Contact</p>
-						<h2 className="display-tight mt-5 max-w-[16ch] text-[2rem] font-bold text-paper lg:text-[2.9rem]">
-							Tell us what you're weighing up.
+						<h2 className="display-tight mt-5 max-w-[17ch] text-[2rem] font-bold text-paper lg:text-[2.9rem]">
+							Start with the opportunity.
 						</h2>
-						<p className="mt-6 max-w-[46ch] text-[1.02rem] leading-relaxed text-brand-grey">
-							A first conversation costs nothing and is usually enough to tell you
-							whether the move is worth studying properly. If it isn't, we'll say so.
+						<p className="mt-6 max-w-[48ch] text-[1.02rem] leading-relaxed text-brand-grey">
+							A first discussion is usually enough to determine whether an
+							opportunity deserves a structured assessment. Tell us what you are
+							considering and what is currently blocking a decision.
 						</p>
 
 						<div className="mt-12 space-y-px bg-ink-3">
@@ -88,16 +90,10 @@ export function Contact() {
 							<div className="flex gap-4 bg-ink py-6">
 								<Phone className="mt-0.5 h-[18px] w-[18px] shrink-0 text-brand-orange" />
 								<div className="space-y-1">
-									<a
-										href="tel:+2348033370366"
-										className="block text-[0.95rem] text-brand-grey transition-colors hover:text-paper"
-									>
+									<a href="tel:+2348033370366" className="block text-[0.95rem] text-brand-grey transition-colors hover:text-paper">
 										+234 803 337 0366
 									</a>
-									<a
-										href="tel:+2348055219193"
-										className="block text-[0.95rem] text-brand-grey transition-colors hover:text-paper"
-									>
+									<a href="tel:+2348055219193" className="block text-[0.95rem] text-brand-grey transition-colors hover:text-paper">
 										+234 805 521 9193
 									</a>
 								</div>
@@ -115,7 +111,6 @@ export function Contact() {
 						</div>
 					</div>
 
-					{/* Right — form */}
 					<div className="bg-ink-2 p-8 lg:p-11">
 						{submit.isSuccess ? (
 							<div className="flex h-full flex-col justify-center py-8">
@@ -124,13 +119,12 @@ export function Contact() {
 									Almost there.
 								</h3>
 								<p className="mt-4 max-w-[40ch] text-[0.97rem] leading-relaxed text-brand-grey">
-									Thank you, {form.name.trim().split(" ")[0]}. Your email app has opened with
-									your message to Olayinka. Press send there and you'll hear back within
-									two business days. If nothing opened, email{" "}
+									Thank you, {form.name.trim().split(" ")[0]}. Your email app has opened
+									with your message to Olayinka. Press send there and you'll hear back
+									within two business days. If nothing opened, email{" "}
 									<a href="mailto:yinka.adebiyi@maduyconsult.com" className="text-paper underline">
 										yinka.adebiyi@maduyconsult.com
-									</a>
-									.
+									</a>.
 								</p>
 							</div>
 						) : (
@@ -208,8 +202,7 @@ export function Contact() {
 
 								{submit.isError && (
 									<p className="text-[0.85rem] text-brand-orange">
-										That didn't send. Check the required fields and try again, or
-										email us directly.
+										That didn't send. Check the required fields and try again, or email us directly.
 									</p>
 								)}
 							</form>
